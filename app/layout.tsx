@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rômulo Zirbes | Fullstack Developer",
+  title: "Rômulo Zirbes",
   description:
     "Portfólio de desenvolvimento fullstack com projetos em Next.js, NestJS e React Native.",
 };
