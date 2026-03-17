@@ -27,6 +27,30 @@ const learning = [
   "Evolução contínua em desenvolvimento fullstack com foco em aplicações modernas",
   "Estudo de boas práticas para APIs, performance e experiência do usuário",
 ];
+const experiences = [
+  {
+    title: "Desenvolvedor Fullstack",
+    company: "PaperZero",
+    period: "Jun 2025 - Atual",
+    description: [
+      "Desenvolvimento e manutenção de sistema de gestão documental (GED) com foco em performance e escalabilidade.",
+      "Implementação de funcionalidades em frontend com React e Next.js, utilizando boas práticas de componentização e UX.",
+      "Criação e evolução de APIs com Node.js/NestJS, incluindo autenticação, regras de negócio e integrações.",
+      "Trabalho com bancos de dados relacionais e organização de dados estruturados para sistemas corporativos.",
+      "Atuação em fluxo completo de desenvolvimento (feature → PR → revisão → deploy), seguindo boas práticas de versionamento com Git.",
+    ],
+  },
+  {
+    title: "Desenvolvedor Fullstack Freelancer",
+    company: "Projetos próprios e freelas",
+    period: "2024 - 2025",
+    description: [
+      "Desenvolvimento de aplicações web e mobile com React, Next.js, React Native, Node.js e NestJS.",
+      "Criação de APIs com autenticação JWT e integração com bancos de dados SQL e NoSQL.",
+      "Construção de sistemas completos, incluindo agendamento, monitoramento e interfaces interativas.",
+    ],
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -117,6 +141,66 @@ export default function AboutPage() {
                 >
                   • {item}
                 </Typography>
+              ))}
+            </Stack>
+          </Box>
+
+          <Box>
+            <SectionTitle>Experiência profissional</SectionTitle>
+
+            <Stack spacing={3} mt={3}>
+              {experiences.map((experience) => (
+                <Box
+                  key={experience.title + experience.company}
+                  sx={{
+                    p: 3,
+                    border: "1px solid #e2e8f0",
+                    borderRadius: 3,
+                    bgcolor: "#ffffff",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: "#0f172a",
+                      fontSize: "1.05rem",
+                      fontWeight: 700,
+                      mb: 0.5,
+                    }}
+                  >
+                    {experience.title}
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      color: "#1d4ed8",
+                      fontWeight: 600,
+                      mb: 0.5,
+                    }}
+                  >
+                    {experience.company}
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      color: "#64748b",
+                      fontSize: "0.95rem",
+                      mb: 2,
+                    }}
+                  >
+                    {experience.period}
+                  </Typography>
+
+                  <Stack spacing={1.2}>
+                    {experience.description.map((item) => (
+                      <Typography
+                        key={item}
+                        sx={{ color: "#475569", lineHeight: 1.8 }}
+                      >
+                        • {item}
+                      </Typography>
+                    ))}
+                  </Stack>
+                </Box>
               ))}
             </Stack>
           </Box>
