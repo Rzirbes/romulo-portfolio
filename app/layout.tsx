@@ -12,11 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Rômulo Zirbes",
-  description: "Rômulo Zirbes - Portfólio",
+export const metadata = {
+  title: "Rômulo Zirbes | Fullstack Developer",
+  description:
+    "Portfólio de desenvolvimento fullstack com projetos em Next.js, NestJS e React Native.",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

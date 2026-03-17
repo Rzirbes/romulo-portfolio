@@ -1,7 +1,8 @@
 export const projects = [
   {
     title: "RenderIA",
-    description: "SaaS fullstack de geração de renders arquitetônicos com IA.",
+    description:
+      "SaaS fullstack de geração de renders arquitetônicos com IA. Observação: o backend pode levar alguns segundos no primeiro acesso devido ao cold start do servidor.",
     image: "/projects/renderia.png",
     gif: "/projects/renderia.gif",
     tech: ["Next.js", "NestJS", "AI", "Supabase"],
