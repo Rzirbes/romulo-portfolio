@@ -38,6 +38,26 @@ export const projects = [
       "Sistema de colaboradores",
     ],
   },
+  {
+    title: "Training Tracker System Mobile",
+    description:
+      "Plataforma completa para gestão de atletas, treinos e monitoramento.",
+    image: "/projects/training-track.jpg",
+    gif: "/projects/training-track.gif",
+    tech: ["React Native", "NestJS", "PostgreSQL"],
+    links: {
+      frontend: "https://github.com/Rzirbes/PDS",
+      backend:
+        "https://github.com/Rzirbes/training-tracker-system/tree/main/api",
+      live: "https://github.com/Rzirbes/PDS/blob/main/README.md",
+    },
+    github: "#",
+    highlights: [
+      "Agenda de treinos",
+      "Monitoramento de atletas",
+      "Sistema de colaboradores",
+    ],
+  },
   //   {
   //     title: "Pokédex",
   //     description:
@@ -52,8 +72,16 @@ export const projects = [
 ];
 
 export const certifications = [
-  "React Hooks Certification",
-  "Node.js e Express",
-  "Tailwind CSS",
-  "Flutter Development",
+  {
+    title: "SQL Server - Manipulando Dados",
+    issuer: "DIO",
+    date: "2026",
+    link: "https://web.dio.me/certificates/xxxx",
+  },
+  {
+    title: "Entity Framework com C#",
+    issuer: "DIO",
+    date: "2023",
+    link: "https://web.dio.me/certificates/xxxx",
+  },
 ];

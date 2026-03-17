@@ -10,7 +10,7 @@ export function CertificationsSection() {
 
       <Stack spacing={2} maxWidth={700} mx="auto">
         {certifications.map((item) => (
-          <CertificationCard key={item} title={item} />
+          <CertificationCard key={item.title} {...item} />
         ))}
       </Stack>
     </Box>
