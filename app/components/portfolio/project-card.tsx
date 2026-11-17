@@ -105,7 +105,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </Typography>
 
           <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap mb={3}>
-            {project.tech.slice(0, 3).map((tech) => (
+            {project.tech.map((tech) => (
               <Chip
                 key={tech}
                 label={tech}
