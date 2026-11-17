@@ -1,63 +1,53 @@
 export const projects = [
   {
-    title: "RenderIA",
+    title: "Coopersal",
     description:
-      "SaaS fullstack de geração de renders arquitetônicos com IA. Observação: o backend pode levar alguns segundos no primeiro acesso devido ao cold start do servidor.",
-    image: "/projects/renderia.png",
-    gif: "/projects/renderia.gif",
-    tech: ["Next.js", "NestJS", "AI", "Supabase"],
+      "Sistema de gestão de uma cooperativa de reciclagem, em produção: rotas de coleta, frota, motoristas, abastecimentos e produção de materiais. 11 módulos e 63 endpoints.",
+    image: "/projects/coopersal.png",
+    tech: ["NestJS", "Next.js", "PostgreSQL", "Redis", "Playwright"],
     links: {
-      frontend: "https://github.com/Rzirbes/render-ia",
-      backend: "https://github.com/Rzirbes/renderia-api",
-      live: "https://www.renderia-curva.com.br/",
+      live: "https://github.com/Rzirbes/coopersal-showcase/blob/main/README.md",
     },
-    highlights: [
-      "Arquitetura fullstack (frontend + backend)",
-      "Sistema de créditos",
-      "Processamento de jobs",
-      "Geração de imagens com IA",
-    ],
   },
   {
-    title: "Athlete Management",
+    title: "RenderIA",
     description:
-      "Plataforma completa para gestão de atletas, treinos e monitoramento.",
+      "SaaS de geração de renders arquitetônicos com IA (Gemini) a partir de sketches, com filas em BullMQ, sistema de créditos e API documentada no Swagger.",
+    image: "/projects/renderia.png",
+    gif: "/projects/renderia.gif",
+    tech: ["Next.js", "NestJS", "BullMQ", "Gemini API"],
+    links: {
+      backend: "https://github.com/Rzirbes/renderia-api",
+      live: "https://github.com/Rzirbes/render-ia",
+    },
+  },
+  {
+    title: "TeamZQ Web",
+    description:
+      "Sistema web e API para gestão de atletas, agenda de treinos, monitoramento de carga (planejado vs. realizado), bem-estar e relatórios, com controle de acesso por perfis.",
     image: "/projects/athlete_management.png",
     gif: "/projects/athlete_management.gif",
-    tech: ["React Native", "NestJS", "PostgreSQL"],
+    tech: ["Next.js", "NestJS", "PostgreSQL", "AWS S3"],
     links: {
       frontend:
         "https://github.com/Rzirbes/training-tracker-system/tree/main/front",
       backend:
         "https://github.com/Rzirbes/training-tracker-system/tree/main/api",
-      live: "https://github.com/Rzirbes/training-tracker-system/tree/main",
+      live: "https://github.com/Rzirbes/training-tracker-system",
     },
-    github: "#",
-    highlights: [
-      "Agenda de treinos",
-      "Monitoramento de atletas",
-      "Sistema de colaboradores",
-    ],
   },
   {
-    title: "Training Tracker System Mobile",
+    title: "TeamZQ Mobile",
     description:
-      "Plataforma completa para gestão de atletas, treinos e monitoramento.",
+      "Aplicativo mobile da plataforma TeamZQ, com sessão persistida, refresh token e gráficos de acompanhamento dos atletas.",
     image: "/projects/training-track.jpg",
     gif: "/projects/training-track.gif",
-    tech: ["React Native", "NestJS", "PostgreSQL"],
+    tech: ["React Native (Expo)", "TypeScript", "NestJS"],
     links: {
-      frontend: "https://github.com/Rzirbes/PDS",
       backend:
         "https://github.com/Rzirbes/training-tracker-system/tree/main/api",
-      live: "https://github.com/Rzirbes/PDS/blob/main/README.md",
+      live: "https://github.com/Rzirbes/TeamZQ",
     },
-    github: "#",
-    highlights: [
-      "Agenda de treinos",
-      "Monitoramento de atletas",
-      "Sistema de colaboradores",
-    ],
   },
   //   {
   //     title: "Pokédex",
